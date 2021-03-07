@@ -21,10 +21,14 @@ require_once "config.php";
 //$aluno = new Usuario("","");
 //$aluno->insert();
 
-$usuario = new Usuario("","");
+//Alterando usuário
+//$usuario = new Usuario("","");
+//$usuario->loadById(5);
+//$usuario->update("professor","prof123");
 
-$usuario->loadById(5);
-
-$usuario->update("professor","prof123");
+//Deletando Usuário
+//$usuario = new Usuario();
+//$usuario->loadById(5);
+//$usuario->delete();
 
 echo $usuario;
