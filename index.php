@@ -14,7 +14,17 @@ require_once "config.php";
 //$search = Usuario::search("ma");
 
 //Carrega usuário usando login e senha
-$usuario = new Usuario();
-$usuario->login("Danyphier","buxexudo");
+//$usuario = new Usuario();
+//$usuario->login("Danyphier","buxexudo");
+
+//Inserindo usuário via procedure
+//$aluno = new Usuario("","");
+//$aluno->insert();
+
+$usuario = new Usuario("","");
+
+$usuario->loadById(5);
+
+$usuario->update("professor","prof123");
 
 echo $usuario;
