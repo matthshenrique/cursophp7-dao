@@ -2,8 +2,19 @@
 
 require_once "config.php";
 
-$root = new Usuario();
+//Carrega um usuário
+//$root = new Usuario();
+//$root->loadById(1);
+//echo $root;
 
-$root->loadById(1);
+//Carrega Lista de Usuários
+//$lista = Usuario::getList();
 
-echo $root;
+//Carrega uma lista buscando pelo login
+//$search = Usuario::search("ma");
+
+//Carrega usuário usando login e senha
+$usuario = new Usuario();
+$usuario->login("Danyphier","buxexudo");
+
+echo $usuario;
